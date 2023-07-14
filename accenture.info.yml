@@ -1,0 +1,8 @@
+name: Accenture
+description: Provides API for entity bundle classes.
+package: Custom
+type: module
+core_version_requirement: ^9.4 || ^10
+dependencies:
+  - drupal:rest
+  - drupal:serialization

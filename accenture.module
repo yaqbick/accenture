@@ -1,0 +1,9 @@
+<?php 
+
+use Drupal\accenture\Entity\ArticleEntityBundle;
+
+function accenture_entity_bundle_info_alter(array &$bundles): void {
+  if (isset($bundles['node']['article'])) {
+    $bundles['node']['article']['class'] = ArticleEntityBundle::class;
+  }
+}
