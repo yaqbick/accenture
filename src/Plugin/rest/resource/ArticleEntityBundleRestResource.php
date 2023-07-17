@@ -55,6 +55,7 @@ class ArticleEntityBundleRestResource extends ResourceBase implements CacheableR
         }
 
         $cache_metadata = new CacheableMetadata();
+        $cacheableMetadata->addCacheTags(['node_list']);
         $cache_metadata->setCacheMaxAge(3600); // Cache for 1 hour.
         $cache_metadata->addCacheContexts(['url.query_args']);
       
